@@ -1,0 +1,26 @@
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+header div {
+    float: right;
+}
+
+header a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+#user-profile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}

@@ -1,3 +1,4 @@
+from django.contrib.auth import logout
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from .models import Question, Answer
@@ -59,3 +60,9 @@ def register(request):
 @login_required
 def profile(request):
     return render(request, 'registration/profile.html')
+
+
+@login_required
+def logout_view(request):
+    logout(request)
+    return render(request, 'registration/logged_out.html')

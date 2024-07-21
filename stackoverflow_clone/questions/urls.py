@@ -8,4 +8,5 @@ urlpatterns = [
     path('answer/<int:question_id>/', views.answer_question, name='answer_question'),
     path('register/', views.register, name='register'),
     path('accounts/profile/', views.profile, name='profile'),
+    path('logout/', views.logout_view, name='logout'),
 ]
